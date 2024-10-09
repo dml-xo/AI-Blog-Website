@@ -53,11 +53,15 @@ nav {
     color: #595959;
 }
 
+nav p:hover {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
 }
 
-.home {
+.main-nav {
     border: 1px solid #262626;
     background-color: #000;
     color: white;
@@ -795,6 +799,97 @@ footer {
     margin-top: 1rem;
 }
 
+.news-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 9rem;
+    gap: 1rem;
+    border-bottom: 1px solid #262626;
+}
+
+.sub-headline {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.climate {
+    display: flex;
+    padding: 4rem 9rem;
+    align-items: center;
+    gap: 3rem;
+    border-bottom: 1px solid #262626;
+}
+
+.climate-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.climate-text h3 {
+    font-size: 32px;
+}
+
+.climate-sub-div1 {
+    display: flex;
+    gap: 3rem;
+}
+
+.topic {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 9rem;
+    border-bottom: 1px solid #262626;
+}
+
+.topics-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.topics-sub2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #262626;
+}
+
+.view-second {
+    display: flex;
+    padding: 0 9rem;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
+
+.view-sub-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+
+}
+
+.view-sub-div:nth-of-type(1) {
+    border-right: 1px solid #262626;
+    padding: 4rem 3rem 3rem 0;
+}
+
+.view-sub-div:nth-of-type(2) {
+    padding: 4rem 0 3rem 3rem;
+}
+
 @media screen and (max-width: 1580px) {
     h1 {
         font-size: 60px;
@@ -802,10 +897,6 @@ footer {
 
     .downloads img {
         width: 150px;
-    }
-
-    .downloads h6 {
-        /* font-size: 22px; */
     }
 
     .downloads p {
@@ -892,6 +983,26 @@ footer {
     .copyright {
         padding: 1rem 3rem;
     }
+
+    .headline {
+        padding: 4rem 3rem;
+    }
+
+    .climate {
+        padding: 4rem 3rem;
+    }
+
+    .topic {
+        padding: 3rem;
+    }
+
+    .view-second {
+        padding: 0 3rem;
+    }
+
+    .topics-sub h4 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1440px) {
@@ -906,6 +1017,10 @@ footer {
     .sub-div-two {
         gap: 1rem;
         padding: 1rem o;
+    }
+
+    .topics-sub h4 {
+        font-size: 18px;
     }
 }
 
@@ -932,6 +1047,18 @@ footer {
     .formats {
         padding: 15px;
     }
+
+    .topics-sub h4 {
+        font-size: 17px;
+    }
+
+    .topics-sub p {
+        font-size: 15px;
+    }
+
+    .topics-sub button {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -948,7 +1075,7 @@ footer {
         font-size: 15px;
     }
 
-    .home {
+    .main-nav {
         padding: 10px 20px;
     }
 
@@ -1123,6 +1250,56 @@ footer {
     .sixth-sub-div img {
         padding: 5px;
     }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .topic {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .topics-sub h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .topics-sub .rate {
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .topics-sub h4 {
+        font-size: 14px;
+    }
+
+    .topics-sub p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1072px) {
+    .topics-sub h4 {
+        font-size: 15px;
+    }
+
+    .topics-sub {
+        gap: 7px;
+    }
+
+    .climate-text h4 {
+        font-size: 15px;
+    }
+
+    .topic {
+        flex-wrap: wrap;
+    }
+
+    .topics-sub {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 1020px) {
@@ -1135,6 +1312,11 @@ footer {
     .second-left {
         max-width: 400px;
     }
+
+    .climate img {
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1164,6 +1346,40 @@ footer {
 
     .sixth-sub-div p {
         font-size: 18px;
+    }
+
+    .climate h3 {
+        font-size: 25px;
+    }
+
+    .climate {
+        padding: 2rem 3rem;
+    }
+
+    .headline p {
+        line-height: 20px;
+    }
+
+    .headline h1 {
+        font-size: 35px;
+    }
+
+    .climate p {
+        line-height: 20px;
+    }
+
+    .climate h4 {
+        font-size: 13px;
+    }
+
+    .climate-text .rate {
+        padding: 5px 8px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .climate p {
+        font-size: 13px;
     }
 }
 
@@ -1277,6 +1493,26 @@ footer {
         width: 50px;
     }
 
+    .headline {
+        padding: 2rem 1rem;
+    }
+
+    .climate {
+        padding: 1rem;
+    }
+
+    .topic {
+        padding: 1rem;
+    }
+
+    .view-sub-div:nth-of-type(1) {
+        padding: 1rem;
+    }
+
+    .view-sub-div:nth-of-type(2) {
+        padding: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1291,6 +1527,7 @@ footer {
     nav {
         border-top: 1px solid #262626;
         border-bottom: 1px solid #262626;
+        padding: 5px;
     }
 
     p {
@@ -1550,10 +1787,67 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
+
+    .preview {
+        flex-direction: column;
+    }
+
+    .total {
+        width: 100%;
+    }
+
+    .formats {
+        width: 100%;
+    }
+
+    .headline h1 {
+        font-size: 35px;
+    }
+
+    .sub-headline {
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .climate {
+        flex-direction: column;
+    }
+
+    .climate img {
+        width: 100%;
+    }
+
+    .topic {
+        flex-direction: column;
+    }
+
+    .topics-sub {
+        width: 100%;
+    }
+
+    .view-second {
+        padding: 0;
+        flex-direction: column;
+        border-top: none;
+    }
+
+    .view-sub-div {
+        width: 100%;
+        border-top: 1px solid #393939;
+    }
+
+    .view-sub-div:nth-of-type(1) {
+        /* border-right: none; */
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     h5 {
+        font-size: 25px;
+    }
+
+    .headline h1 {
         font-size: 25px;
     }
 }
