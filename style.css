@@ -2217,7 +2217,7 @@ li {
     }
 
     .res-type p {
-        width: 35%;
+        /* width: fit-content; */
         padding: 10px 15px;
     }
 }
@@ -2229,5 +2229,10 @@ li {
 
     .headline h1 {
         font-size: 25px;
+    }
+
+    .res-type {
+        gap: 10px;
+        padding: 10px 5px 0 5px;
     }
 }
