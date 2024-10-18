@@ -2209,6 +2209,17 @@ li {
     .res-rate-sub:nth-of-type(2) {
         border-right: none;
     }
+
+    .res-type {
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .res-type p {
+        width: 35%;
+        padding: 10px 15px;
+    }
 }
 
 @media screen and (max-width: 400px) {
