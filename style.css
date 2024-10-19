@@ -1187,12 +1187,16 @@ li {
     width: 48%;
 }
 
-.form-input p {
+.form-input input {
     background-color: #1A1A1A;
     border: 1px solid #262626;
     padding: 1rem;
     border-radius: 7px;
     height: 4rem;
+    color: #98989A;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+
 
 }
 
@@ -1219,12 +1223,14 @@ li {
     width: 100%;
 }
 
-.con-message p {
+.con-message textarea {
     background-color: #1A1A1A;
     border: 1px solid #262626;
     border-radius: 7px;
     height: 10rem;
     padding: 1rem;
+    color: #98989A;
+    font-size: 15px;
 }
 
 .con-message {
